@@ -38,7 +38,8 @@ const remove = () => {
 
 <style scoped>
 .polaroid {
-  width: 220px;
+  max-width: 220px;
+  width: 100%;
   background: #fff;
   padding: 15px 15px 20px;
   box-shadow: 10px 5px 10px rgba(166, 166, 166, 0.15);
