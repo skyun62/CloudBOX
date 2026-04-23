@@ -1,14 +1,14 @@
-# 旅行札記 Travel Box
+# CloudBOX家飾選物店 Home Deco Shop
 
-**A travel blog & e-commerce front-end practice project built with Vue 3.**
+**A home decor e-commerce front-end practice project built with Vue 3.**
 
-🔗 Live Demo → https://skyun62.github.io/travel_box/
+🔗 Live Demo → https://your-github-username.github.io/home-deco-shop/
 
 ---
 
 ## 專案介紹
 
-這是一個以「旅行」為主題的前端練習專案，結合了部落格瀏覽、旅遊回憶展示與購物流程，從一份靜態 HTML / Bootstrap 原型，逐步重構為 Vue 3 元件化架構。
+這是一個以「家飾選物」為主題的前端練習專案，結合了商品瀏覽、風格展示與完整購物流程，從一份靜態 HTML / Bootstrap 原型，逐步重構為 Vue 3 元件化架構。
 
 整個開發過程涵蓋：
 
@@ -26,8 +26,7 @@
 | 框架 | Vue 3 (`<script setup>`) |
 | 路由 | Vue Router 4 |
 | CSS 框架 | Bootstrap 5 |
-| 圖示 | Bootstrap Icons、Font Awesome 7 |
-| 輪播 | Swiper.js 12 |
+| 圖示 | Bootstrap Icons |
 | 建置工具 | Vite |
 | 部署 | GitHub Pages |
 
@@ -39,16 +38,11 @@
 
 | 區塊 | 說明 |
 |------|------|
-| Carousel 輪播 | Bootstrap Carousel，三張海景圖搭配文字 CTA |
-| 角色圓圈 | `Role.vue`，三欄特色介紹 |
-| 拍立得相簿 | Swiper.js 滑動，每頁 2–3 張拍立得風格照片，支援 ❤️ 愛心互動 |
-| 購物卡片列表 | `ShoppingCard.vue`，加入購物車後自動跳轉至購物車 |
-| 圖片馬賽克 | `PhotoMosaic.vue`，左右兩欄的不對稱網格圖片排列 |
-| 資料表格 | `DataTable.vue`，含 radio 選取與按鈕 |
+| Carousel 輪播 | Bootstrap Carousel，展示風格情境圖與品牌標語 |
+| 商品卡片列表 | `ShoppingCard.vue`，統一圖片規格（`object-fit: cover`），加入購物車後自動跳轉 |
+| 風格介紹區塊 | 品牌理念與選品風格說明 |
 | 圖文交錯區塊 | `TextImageBlock.vue`，支援 `:reverse` prop 切換左右版型 |
-| Google Maps 聯絡 | `MapContact.vue`，地圖 iframe + Feedback 表單 |
-| Blog 卡片 | `BlogCard.vue`，四欄文章卡片，hover 放大效果 |
-| 頁籤切換 | `TabMenu.vue`，NEWS / HOT / 推薦三分頁，搭配 fadeIn 動畫 |
+| Google Maps 聯絡 | `MapContact.vue`，地圖 iframe + 聯絡表單 |
 
 ### 購物車流程（4 步驟 SPA）
 
@@ -79,19 +73,13 @@ src/
 │
 └── components/
     ├── 共用
-    │   ├── CartProgress.vue   # 購物車步驟進度條（1–4）
-    │   └── CartSummary.vue    # 金額摘要（數量、小計、運費、總計）
+    │   ├── CartProgress.vue     # 購物車步驟進度條（1–4）
+    │   └── CartSummary.vue      # 金額摘要（數量、小計、運費、總計）
     │
-    ├── 首頁區塊
-    │   ├── Role.vue           # 特色圓圈卡片
-    │   ├── LikeButton.vue     # 拍立得愛心按鈕
-    │   ├── PhotoMosaic.vue    # 不對稱圖片馬賽克
-    │   ├── DataTable.vue      # 資料表格 + radio
-    │   ├── TextImageBlock.vue # 圖文交錯區塊（支援 reverse）
-    │   ├── MapContact.vue     # 地圖 + 聯絡表單
-    │   ├── BlogCard.vue       # 文章卡片
-    │   ├── ShoppingCard.vue   # 購物商品卡片
-    │   └── TabMenu.vue        # 頁籤選單
+    └── 首頁區塊
+        ├── ShoppingCard.vue     # 商品卡片（統一圖片尺寸、加入購物車）
+        ├── TextImageBlock.vue   # 圖文交錯區塊（支援 reverse）
+        └── MapContact.vue       # 地圖 + 聯絡表單
 ```
 
 ---
@@ -114,6 +102,24 @@ Step 4 讀取 cart + orderInfo 顯示完整訂單
 
 ---
 
+## 商品資料結構
+
+商品資料以陣列形式統一管理於父元件，傳遞至 `ShoppingCard.vue`：
+
+```js
+const products = [
+  {
+    img: lamp2,           // import 自 src/assets/img/
+    smallTitle: '商品名稱',
+    description: '商品描述',
+    price: 1200,
+  },
+  // ...
+]
+```
+
+---
+
 ## 本地啟動
 
 ```bash
@@ -131,18 +137,18 @@ npm run build
 
 ## 設計說明
 
-本專案由 UI/UX 設計師主導開發，核心設計決策如下：
+本專案以「溫暖、質感、北歐簡約」為視覺核心，設計決策如下：
 
-- **拍立得風格**：使用 `aspect-ratio: 4/5`、底部空白與 Courier New 字型還原膠卷感，hover 時以輕微旋轉 + 縮放模擬拿起的觸感
-- **購物車配色**：主色 `#3a8fb7`（天空藍）呼應旅行主題，進度條與按鈕統一色調
-- **文字主色**：`#ba9393`（玫瑰粉）貫穿 caption、連結與頁籤 accent，對應旅遊日記的溫暖質感
+- **商品卡片**：統一 `height: 220px` + `object-fit: cover`，確保所有商品圖片規格一致，視覺整齊
+- **主色調**：`#ba9393`（玫瑰粉）貫穿價格標示、按鈕邊框與 hover 效果，呼應溫暖居家氛圍
+- **hover 互動**：卡片 `transform: scale(1.05)` 輕微放大，增加選品的探索感
 - **版型節奏**：圖文交錯的 `TextImageBlock` 交替左右對齊，避免單調的垂直堆疊
 
 ---
 
 ## 作者
 
-**skyun62** — UI/UX Designer & Front-end Learner
+**skyun_62** — UI/UX Designer & Front-end Learner
 git add README.md
 git commit
 git push
