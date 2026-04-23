@@ -70,11 +70,11 @@ const currentTab = ref('NEWS')
             </div>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="../assets/img/banner1_1.jpg" class="d-block w-100" alt="..." style="max-height: 70vh;">
+                    <img src="../assets/img/banner1_1.jpg" class="d-block w-100" alt="..." style="max-height: 80vh;">
 
                     <div class="text-start carousel-caption d-none d-md-block">
-                        <h2 class="display-1" style="font-weight: bold;">Travel Magazine</h2>
-                        <p>Some representative placeholder content for the first slide.</p>
+                        <h2 class="display-1" style="font-weight: bold;">一切都剛好</h2>
+                        <p>為你的空間，找到剛剛好的存在</p>
                         <button type="button" class="btn btn-primary btn-mg">Sing up</button>
                     </div>
                 </div>
@@ -82,18 +82,18 @@ const currentTab = ref('NEWS')
 
 
                 <div class="carousel-item">
-                    <img src="../assets/img/banner1_2.png" class="d-block w-100" alt="..." style="max-height: 70vh;">
+                    <img src="../assets/img/banner1_2.png" class="d-block w-100" alt="..." style="max-height: 80vh;">
                     <div class="text-center carousel-caption d-none d-md-block">
-                        <h2 class="display-1" style="font-weight: bold;">Travel Magazine</h2>
-                        <p>Some representative placeholder content for the second slide.</p>
+                        <h2 class="display-1" style="font-weight: bold;">選好物，過好日</h2>
+                        <p>每一件選物，都是生活品味的延伸。</p>
                         <button type="button" class="btn btn-primary btn-mg">Sing up</button>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="../assets/img/banner1_3.jpg" class="d-block w-100" alt="..." style="max-height: 70vh;">
+                    <img src="../assets/img/banner1_3.jpg" class="d-block w-100" alt="..." style="max-height: 80vh;">
                     <div class="text-end carousel-caption d-none d-md-block">
-                        <h2 class="display-1" style="font-weight: bold;">Travel Magazine</h2>
-                        <p>Some representative placeholder content for the third slide.</p>
+                        <h2 class="display-1" style="font-weight: bold;">你想回去哪裡?</h2>
+                        <p>打造一個讓你想回去的地方。</p>
                         <button type="button" class="btn btn-primary btn-mg">Sing up</button>
                     </div>
                 </div>
