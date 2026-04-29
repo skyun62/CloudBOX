@@ -62,15 +62,13 @@ const skills = [
 
                     <h2 class="section-title">About source</h2>
                     <p>
-                        這些是網站中的圖片來源
+                        影像版權屬原創者所有。本站經授權後透過Official Instagram Embedding 嵌入，純屬非營利分享，若需調整或移除，請隨時聯繫。
                     </p>
                     <!-- 表格 -->
                     <DataTable @select="(row) => console.log('選到', row)" />
                 </div>
 
                 <div class="about-right">
-
-
                     <div class="info-list">
                         <div class="info-row">
                             <span class="info-label">地點</span>
@@ -124,7 +122,8 @@ const skills = [
 .about-page {
     background: #f8f6f3;
     min-height: 100vh;
-    font-family: 'Georgia', serif;
+    font-family: 'Jost', 'Noto Serif TC', sans-serif;
+    font-weight: 300;
 }
 
 /* ===== Hero ===== */
@@ -170,12 +169,14 @@ const skills = [
     text-transform: uppercase;
     color: #3a8fb7;
     margin-bottom: 12px;
-    font-family: 'Courier New', monospace;
+    font-family: 'Jost', 'Noto Serif TC', sans-serif;
+    font-weight: 300;
 }
 
 .hero-name {
+    font-family: 'Playfair Display', 'Noto Serif TC', serif;
+    font-weight: 400;
     font-size: clamp(2.4rem, 5vw, 4rem);
-    font-weight: 700;
     line-height: 1.15;
     color: #2c2c2c;
     margin-bottom: 20px;
@@ -191,6 +192,8 @@ const skills = [
     font-size: 15px;
     margin-bottom: 32px;
     max-width: 380px;
+    font-family: 'Jost', 'Noto Serif TC', sans-serif;
+    font-weight: 300;
 }
 
 .hero-btns {
@@ -211,6 +214,8 @@ const skills = [
     display: inline-flex;
     align-items: center;
     gap: 6px;
+    font-family: 'Jost', sans-serif;
+    font-weight: 300;
 }
 
 .btn-primary-custom:hover {
@@ -227,6 +232,8 @@ const skills = [
     text-decoration: none;
     font-size: 14px;
     transition: background 0.2s, transform 0.2s;
+    font-family: 'Jost', sans-serif;
+    font-weight: 300;
 }
 
 .btn-ghost-custom:hover {
@@ -282,15 +289,18 @@ const skills = [
     letter-spacing: 3px;
     text-transform: uppercase;
     color: #3a8fb7;
-    font-family: 'Courier New', monospace;
-    margin-bottom: 20px;
+    font-family: 'Playfair Display', 'Noto Serif TC', serif;
+    font-weight: 400;
+    margin-bottom: 10px;
 }
 
 .about-left p {
     color: #555;
     line-height: 1.9;
-    margin-bottom: 16px;
+    margin-bottom: 30px;
     font-size: 15px;
+    font-family: 'Jost', 'Noto Serif TC', sans-serif;
+    font-weight: 300;
 }
 
 /* Skills chips */
@@ -312,6 +322,8 @@ const skills = [
     font-size: 13px;
     color: #555;
     transition: border-color 0.2s, color 0.2s;
+    font-family: 'Jost', sans-serif;
+    font-weight: 300;
 }
 
 .skill-chip:hover {
@@ -338,12 +350,15 @@ const skills = [
     gap: 20px;
     font-size: 14px;
     color: #555;
+    font-family: 'Jost', sans-serif;
+    font-weight: 300;
 }
 
 .info-label {
     width: 50px;
     color: #ba9393;
-    font-family: 'Courier New', monospace;
+    font-family: 'Jost', sans-serif;
+    font-weight: 300;
     font-size: 13px;
     flex-shrink: 0;
 }
@@ -351,6 +366,7 @@ const skills = [
 .info-link {
     color: #3a8fb7;
     text-decoration: none;
+    font-family: 'Jost', sans-serif;
 }
 
 .info-link:hover {

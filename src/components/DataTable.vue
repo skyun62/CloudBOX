@@ -5,9 +5,9 @@ const props = defineProps({
     rows: {
         type: Array,
         default: () => [
-            { id: 1, first: 'Mark', last: 'Otto', handle: '@mdo' },
-            { id: 2, first: 'Jacob', last: 'Thornton', handle: '@fat' },
-            { id: 3, first: 'John', last: 'Doe', handle: '@social' },
+            { id: 0, name: 'Marten Herma Anderson', instagram: 'mrtn.ndrsn', handle: '@mdo' },
+            { id: 0, name: 'いとう みわ伊藤美和', instagram: 'miwaito.official', handle: '@fat' },
+            { id: 0, name: '陳建志(Chien Chih Chen)', instagram: 'ccc.117', handle: '@social' },
         ]
     }
 })
@@ -27,26 +27,24 @@ function onSelect(row) {
         <thead>
             <tr>
                 <th scope="col">#</th>
-                <th scope="col">First</th>
-                <th scope="col">Last</th>
+                <th scope="col">Name</th>
+                <th scope="col">Instagram</th>
                 <th scope="col">Handle</th>
-                <th scope="col">Select</th>
+                <th scope="col">Instagram Official Embed</th>
             </tr>
         </thead>
         <tbody>
             <tr v-for="row in rows" :key="row.id">
                 <th scope="row">{{ row.id }}</th>
-                <td>{{ row.first }}</td>
-                <td>{{ row.last }}</td>
+                <td>{{ row.name }}</td>
+                <td>{{ row.instagram }}</td>
                 <td>{{ row.handle }}</td>
                 <td>
-                    <input type="radio" name="selectUser" :value="row.id" :checked="selected === row.id"
-                        @change="onSelect(row)">
+                    <input type="checkbox" checked disabled />
                 </td>
             </tr>
         </tbody>
     </table>
-
 </template>
 
 <style scoped>

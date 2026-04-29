@@ -4,26 +4,49 @@ import SkeletonScreen from '@/components/SkeletonScreen.vue';
 
 //角色role
 import Role from '@/components/Role.vue';
+import glasser_japan from '@/assets/img/glasser_japan.jpg'
+import glasser_taiwan from '@/assets/img/glasser_taiwan.jpg'
+import glasser_geme from '@/assets/img/glasser_geme.png'
 
 // 拍立得
 import { onMounted } from 'vue'
 import Swiper from 'swiper'
 import 'swiper/css'
 import LikeButton from '@/components/LikeButton.vue';
-// 電影片單
-//import Movie from '@/components/Movie.vue';
-onMounted(() => {
-    new Swiper('.mySwiper', {
-        slidesPerView: 1, // 一頁顯示一組
-        spaceBetween: 50,
-    })
-})
+
 //購物卡片
 import ShoppingCard from '@/components/ShoppingCard.vue'
 import lamp1 from '@/assets/img/lamp_4_1.jpg'
 import lamp2 from '@/assets/img/lamp_4_2.jpg'
 import lamp3 from '@/assets/img/lamp_4_3.jpg'
 import lamp4 from '@/assets/img/lamp_4_4.jpg'
+//圖中有圖
+import PhotoMosaic from '@/components/PhotoMosaic.vue'
+
+//圖文區塊(三大區)
+import TextImageBlock from '@/components/TextImageBlock.vue'
+import glass_candy from '@/assets/img/glass_candy.png'
+import glass_fish from '@/assets/img/glass_fish.png'
+import glass_black from '@/assets/img/glass_black.png'
+import MapContact from '@/components/MapContact.vue'
+//blog卡片
+import BlogCard from '@/components/BlogCard.vue'
+import banner1_1 from '@/assets/img/banner1_1.jpg'
+//頁籤
+import { ref } from 'vue'
+import TabMenu from '@/components/TabMenu.vue'
+
+// 電影片單
+//import Movie from '@/components/Movie.vue';
+onMounted(() => {
+    new Swiper('.mySwiper', {
+        slidesPerView: 1,
+        spaceBetween: 50,
+    })
+    if (window.instgrm) {
+        window.instgrm.Embeds.process()
+    }
+})
 
 const shoppingCards = [
     { img: lamp1, smallTitle: '體驗課程A', description: 'This is a UI concept project. No actual purchase is available.', price: 1399 },
@@ -32,33 +55,12 @@ const shoppingCards = [
     { img: lamp4, smallTitle: '體驗課程', description: 'This is a UI concept project. No actual purchase is available.', price: 1799 },
 ]
 
-//圖中有圖
-import PhotoMosaic from '@/components/PhotoMosaic.vue'
-
-//圖文區塊(三大區)
-import TextImageBlock from '@/components/TextImageBlock.vue'
-onMounted(() => {
-  // 其他你原本的 onMounted 內容...
-  
-  // 讓 IG embed 重新渲染
-  if (window.instgrm) {
-    window.instgrm.Embeds.process()
-  }
-})
-//地圖資訊
-import MapContact from '@/components/MapContact.vue'
-//blog卡片
-import BlogCard from '@/components/BlogCard.vue'
 const blogCards = [
-    { img: '/src/assets/img/sea1.jpg', smallTitle: 'Card title', description: 'Some quick example text to build on the card title.' },
-    { img: '/src/assets/img/sea1.jpg', smallTitle: 'Card title', description: 'Some quick example text to build on the card title.' },
-    { img: '/src/assets/img/sea1.jpg', smallTitle: 'Card title', description: 'Some quick example text to build on the card title.' },
-    { img: '/src/assets/img/sea1.jpg', smallTitle: 'Card title', description: 'Some quick example text to build on the card title.' },
+    { img: banner1_1, smallTitle: 'Card title', description: 'Some quick example text to build on the card title.' },
+    { img: banner1_1, smallTitle: 'Card title', description: 'Some quick example text to build on the card title.' },
+    { img: banner1_1, smallTitle: 'Card title', description: 'Some quick example text to build on the card title.' },
+    { img: banner1_1, smallTitle: 'Card title', description: 'Some quick example text to build on the card title.' },
 ]
-
-//頁籤
-import { ref } from 'vue'
-import TabMenu from '@/components/TabMenu.vue'
 
 const tabs = ['NEWS', 'HOT', '推薦']
 const currentTab = ref('NEWS')
@@ -130,6 +132,10 @@ const currentTab = ref('NEWS')
             <div class="container">
                 <div class="row col-12 col-lg p-5">
                     <Role>
+                        <template #avatar>
+                            <img :src="glasser_geme" class="rounded-circle mx-auto mb-3 d-block"
+                                style="width: 150px; height: 150px; object-fit: cover;" />
+                        </template>
                         <template #title>Marten Herma Anderson</template>
                         <template #content>
                             粗獷的原始材料中加入鮮豔、溫暖的色彩，讓作品在冷靜的結構中帶有玩味與感性
@@ -141,7 +147,11 @@ const currentTab = ref('NEWS')
                         </template>
                     </Role>
                     <Role>
-                        <template #title>伊藤美和<br>いとう みわ</template>
+                        <template #avatar>
+                            <img :src="glasser_japan" class="rounded-circle mx-auto mb-3 d-block"
+                                style="width: 150px; height: 150px; object-fit: cover;" />
+                        </template>
+                        <template #title>いとう みわ<br>(伊藤美和)</template>
                         <template #content>
                             專注於讓日常器皿具備藝術裝飾性，平衡了實用功能與詩意的美學
                         </template>
@@ -152,9 +162,13 @@ const currentTab = ref('NEWS')
                         </template>
                     </Role>
                     <Role>
-                        <template #title>謝佳珍 <br>Chia Chen Hsieh</template>
+                        <template #avatar>
+                            <img :src="glasser_taiwan" class="rounded-circle mx-auto mb-3 d-block"
+                                style="width: 150px; height: 150px; object-fit: cover;" />
+                        </template>
+                        <template #title>陳建志<br>(Chien Chih Chen)</template>
                         <template #content>
-                            利用竹篾交織出的孔隙與影子，創造出具備空氣感的藝術裝置
+                            台灣玻璃工藝者，從工業設計走向傳統玲瓏窯，將日常記憶凝結成晶瑩的工藝詩篇。
                         </template>
                         <template #action>
                             <router-link to="/craftsman/3" class="btn btn-secondary">
@@ -337,31 +351,50 @@ const currentTab = ref('NEWS')
             </div>
         </section>
         <!-- 圖文區塊 -->
-        <TextImageBlock title="HeadingHeading" text="Some placeholder..." img="..." />
-        <TextImageBlock title="HeadingHeading" text="Some placeholder..." img="..." :reverse="true" />
         <section class="row py-5 align-items-center">
-            <!-- 左：文字 -->
+            <div class="col-12 col-md-5 d-flex justify-content-center">
+                <img :src="glass_candy" alt="Marten Herma Anderson 作品" class="w-100" style="object-fit: cover;" />
+            </div>
             <div class="col-12 col-md-7 d-flex flex-column justify-content-center">
                 <h2 class="display-4 fw-bold">Marten Herma Anderson</h2>
                 <p class="mt-3">粗獷的原始材料中加入鮮豔、溫暖的色彩，讓作品在冷靜的結構中帶有玩味與感性。</p>
-                <a
-                href="https://www.instagram.com/mrtn.ndrsn/"
-                target="_blank"
-                class="mt-3 d-inline-block text-muted"
-                style="font-size: 13px; letter-spacing: 0.1em;"
-                >
-                @mrtn.ndrsn ↗
+                <a href="https://www.instagram.com/mrtn.ndrsn/" target="_blank" class="mt-3 d-inline-block text-muted"
+                    style="font-size: 13px; letter-spacing: 0.1em;">
+                    @mrtn.ndrsn ↗
                 </a>
-            </div>
-
-            <!-- 右：IG embed -->
-            <div class="col-12 col-md-5 d-flex justify-content-center">
-                <blockquote class="instagram-media" data-instgrm-captioned
-                    data-instgrm-permalink="https://www.instagram.com/p/DV9BLnvDDIF/?utm_source=ig_embed&utm_campaign=loading"
-                    data-instgrm-version="14" style="max-width: 400px; width: 100%;"></blockquote>
             </div>
         </section>
         <hr>
+        <section class="row py-5 align-items-center">
+            <div class="col-12 col-md-7 d-flex flex-column justify-content-center">
+                <h2 class="display-4 fw-bold">いとう みわ(伊藤美和)</h2>
+                <p class="mt-3">專注於讓日常器皿具備藝術裝飾性，平衡了實用功能與詩意的美學。</p>
+                <a href="https://www.instagram.com/miwaito.official/" target="_blank"
+                    class="mt-3 d-inline-block text-muted" style="font-size: 13px; letter-spacing: 0.1em;">
+                    @miwaito.official ↗
+                </a>
+            </div>
+            <div class="col-12 col-md-5 d-flex justify-content-center">
+                <img :src="glass_fish" alt="Marten Herma Anderson 作品" class="w-100" style="object-fit: cover;" />
+            </div>
+        </section>
+        <hr>
+        <section class="row py-5 align-items-center">
+            <!-- 左：IG embed -->
+            <div class="col-12 col-md-5 d-flex justify-content-center">
+                <img :src="glass_black" alt="Marten Herma Anderson 作品" class="w-100" style="object-fit: cover;" />
+            </div>
+            <!-- 右：文字 -->
+            <div class="col-12 col-md-7 d-flex flex-column justify-content-center">
+                <h2 class="display-4 fw-bold">陳建志(Chien Chih Chen)</h2>
+                <p class="mt-3">台灣玻璃工藝者，從工業設計走向傳統玲瓏窯，將日常記憶凝結成晶瑩的工藝詩篇。</p>
+                <a href="https://www.instagram.com/ccc.117/" target="_blank" class="mt-3 d-inline-block text-muted"
+                    style="font-size: 13px; letter-spacing: 0.1em;">
+                    @ccc.117 ↗
+                </a>
+            </div>
+        </section>
+
         <!-- 地圖資訊 -->
         <div class="row p-5">
             <div class="col-12 col-md-4">
@@ -388,9 +421,6 @@ const currentTab = ref('NEWS')
 
         </section>
 
-        <section>
-            <Movie />
-        </section>
         <!-- <section>
             <TabMenu :tabs="tabs" :activeTab="currentTab" @change-tab="currentTab = $event" />
             <div class="tab-content">
@@ -473,7 +503,6 @@ const currentTab = ref('NEWS')
     text-align: center;
     font-size: 15px;
     color: #ba9393;
-    font-family: 'Courier New', monospace;
 }
 
 .like-btn {
