@@ -1,122 +1,184 @@
-# CloudBOX家飾選物店 Home Deco Shop
+# CloudBOX — 工藝觀察筆記
 
-**A home decor e-commerce front-end practice project built with Vue 3.**
+> 有些東西，你不買，也值得認識。
 
-🔗 Live Demo → https://your-github-username.github.io/home-deco-shop/
-
----
-
-## 專案介紹
-
-這是一個以「家飾選物」為主題的前端練習專案，結合了商品瀏覽、風格展示與完整購物流程，從一份靜態 HTML / Bootstrap 原型，逐步重構為 Vue 3 元件化架構。
-
-整個開發過程涵蓋：
-
-- 將原始 HTML + CSS 轉換成 Vue SFC（Single File Component）
-- 抽取共用邏輯為可重複使用的 components
-- 使用 Vue Router 建立多頁面 SPA 流程（購物車四步驟）
-- 以 `localStorage` 實作跨頁狀態管理
+🔗 **Live Demo** → [skyun62.github.io/CloudBOX](https://skyun62.github.io/CloudBOX/)
 
 ---
 
-## 技術棧
+## 專案概述
+
+CloudBOX 是一個以「工藝觀察」為核心的內容型網站，靈感來自潘朵拉的盒子——一旦打開，就再也合不回去。
+
+這個專案不販賣任何東西。它記錄那些用雙手製造出時間感的工藝家，以及他們背後值得被更多人看見的故事。每一季聚焦三位工藝家，深入介紹他們的材料、技法與創作哲學。
+
+**品牌核心概念：Cloud（流動、數位、當代）× BOX（潘朵拉、未知、容器）× 工藝學（觀察、記錄、欣賞）**
+
+---
+
+## 設計思維 Design Thinking
+
+### 問題定義
+
+初期以「家飾選品電商」為出發點，但在內容蒐集過程中，發現工藝圖片的版權問題難以規避，且「販賣」的框架反而限縮了對工藝家的詮釋深度。
+
+> 核心問題重新定義：**如何讓人對工藝產生真實的興趣，而不只是消費它？**
+
+### 設計策略轉向
+
+| 原定位 | 調整後定位 |
+|--------|------------|
+| 選品電商 | 工藝觀察筆記 |
+| 以商品為主體 | 以工藝家為主體 |
+| 購買導向 CTA | 認識導向內容 |
+| 版權風險高 | 以文字與設計取代圖片依賴 |
+
+這個轉向不只解決了版權問題，也讓內容有了更清晰的立場：**我們不推薦購買，我們只說「這個人值得你記住」。**
+
+---
+
+## 使用者體驗設計 UX Design
+
+### 目標使用者
+
+對生活美學有感知、但不一定有工藝背景的一般讀者。他們可能不知道「失蠟鑄造」是什麼，但他們能感受到「這個東西有點不一樣」。
+
+### 資訊架構 IA
+
+```
+CloudBOX
+├── 首頁（Hero + 品牌定位）
+│   ├── 本季焦點工藝家（3 位）
+│   ├── 品牌理念區塊
+│   └── Footer
+│
+└── 工藝家單頁介紹
+    ├── 工藝家基本資訊（姓名、國籍、類別）
+    ├── 風格 Hashtag
+    ├── 座右銘 / 創作哲學
+    ├── 作品系列介紹（文字描述）
+    ├── 小故事（人物敘事）
+    └── CloudBOX 觀察角度（編輯視點）
+```
+
+### 頁面設計邏輯
+
+**首頁節奏設計**
+
+頁面以一句反直覺的標語開場——「有些東西，你不買，也值得認識」——目的是在第一秒建立差異化認知，讓訪客立即理解這不是商店。
+
+接著透過三欄工藝家卡片建立季刊感：No. 01 / No. 02 / No. 03 的編號系統強化了「精選、有限、有立場」的編輯質感。
+
+**工藝家單頁結構**
+
+採取「先建立人物感，再展開作品」的敘事順序：
+1. 頭像 + 名字 + 風格標籤 → 快速建立印象
+2. 座右銘 → 進入她的思維世界
+3. 散文式介紹 → 情感連結
+4. 作品卡片 → 具體作品認識
+5. 小故事 → 深化人物記憶點
+6. 編輯觀察 → 建立 CloudBOX 的獨特視角
+
+---
+
+## 視覺設計 Visual Design
+
+### 設計原則
+
+- **留白即立場**：大量留白傳遞「慢下來看」的閱讀節奏，與工藝本身的時間感呼應
+- **文字作為設計元素**：在無法大量使用工藝品圖片的情況下，文字排版本身成為視覺核心
+- **知性而非裝飾**：避免過度設計，介面應像雜誌，而非電商平台
+
+### 色彩系統
+
+| 角色 | 色值 | 用途 |
+|------|------|------|
+| 主色 | `#ba9393` | 強調色、按鈕邊框 |
+| 文字主色 | `#1a1a1a` | 標題、主要內文 |
+| 文字次色 | `#666666` | 說明文字、標籤 |
+| 背景 | `#ffffff` / `#f8f6f3` | 主背景 / 卡片背景 |
+| 邊線 | `rgba(0,0,0,0.12)` | 分隔線、卡片邊框 |
+
+主色 `#ba9393` 玫瑰粉色系貫穿全站，呼應工藝品中常見的溫潤材質感（陶土、天然漆、羊毛）。
+
+### 字體使用
+
+- **標題**：系統 Serif（font-serif）— 帶有出版物質感
+- **內文 / UI**：系統 Sans-serif（font-sans）— 清晰易讀
+- **工藝家座右銘**：Serif + Italic — 強化引言的個人感
+
+### 互動設計
+
+| 元素 | 互動行為 | 設計意圖 |
+|------|----------|----------|
+| 商品卡片 | `transform: scale(1.05)` hover | 微互動增加探索感 |
+| 風格標籤 | Pill 形狀邊框標籤 | 快速掃描工藝家風格關鍵字 |
+| 座右銘區塊 | Left border accent | 視覺上區隔引言與敘述，引導注意力 |
+
+---
+
+## 技術架構 Technical Stack
 
 | 類別 | 使用技術 |
-|------|----------|
-| 框架 | Vue 3 (`<script setup>`) |
+|------|---------|
+| 框架 | Vue 3 (`<script setup>` Composition API) |
 | 路由 | Vue Router 4 |
 | CSS 框架 | Bootstrap 5 |
 | 圖示 | Bootstrap Icons |
 | 建置工具 | Vite |
-| 部署 | GitHub Pages |
+| 部署 | GitHub Pages（via GitHub Actions） |
 
----
-
-## 功能說明
-
-### 首頁（HomeView）
-
-| 區塊 | 說明 |
-|------|------|
-| Carousel 輪播 | Bootstrap Carousel，展示風格情境圖與品牌標語 |
-| 商品卡片列表 | `ShoppingCard.vue`，統一圖片規格（`object-fit: cover`），加入購物車後自動跳轉 |
-| 風格介紹區塊 | 品牌理念與選品風格說明 |
-| 圖文交錯區塊 | `TextImageBlock.vue`，支援 `:reverse` prop 切換左右版型 |
-| Google Maps 聯絡 | `MapContact.vue`，地圖 iframe + 聯絡表單 |
-
-### 購物車流程（4 步驟 SPA）
-
-```
-確認購物車 → 付款與運送 → 填寫資料 → 完成訂單
- /cart/step1    /cart/step2    /cart/step3    /cart/step4
-```
-
-| 步驟 | 主要功能 |
-|------|----------|
-| Step 1 | 顯示購物清單、調整數量（+ / −）、刪除單品、清空購物車、計算總金額 |
-| Step 2 | 選擇付款方式（宅配 / 超商 / 自取）與運送方式，儲存至 `localStorage` |
-| Step 3 | 填寫收件人姓名、電話、Email、地址，儲存至 `localStorage` |
-| Step 4 | 顯示完整訂單明細與收件資料確認 |
-
----
-
-## 元件架構
+### 元件架構
 
 ```
 src/
 ├── views/
-│   ├── HomeView.vue
-│   ├── CartStep1.vue
-│   ├── CartStep2.vue
-│   ├── CartStep3.vue
-│   └── CartStep4.vue
+│   ├── HomeView.vue           # 首頁（Hero、工藝家焦點、品牌理念）
+│   └── ArtistView.vue         # 工藝家單頁介紹
 │
 └── components/
-    ├── 共用
-    │   ├── CartProgress.vue     # 購物車步驟進度條（1–4）
-    │   └── CartSummary.vue      # 金額摘要（數量、小計、運費、總計）
+    ├── 共用元件
+    │   ├── NavBar.vue          # 導覽列
+    │   └── SiteFooter.vue      # 頁尾（版權聲明）
     │
     └── 首頁區塊
-        ├── ShoppingCard.vue     # 商品卡片（統一圖片尺寸、加入購物車）
-        ├── TextImageBlock.vue   # 圖文交錯區塊（支援 reverse）
-        └── MapContact.vue       # 地圖 + 聯絡表單
+        ├── ArtistCard.vue      # 工藝家焦點卡片（編號、標籤、簡介）
+        ├── TextImageBlock.vue  # 圖文交錯區塊（支援 :reverse prop）
+        └── BrandStatement.vue  # 品牌理念區塊
+```
+
+### 資料結構（工藝家）
+
+```javascript
+const artist = {
+  id: 'miwa-ito',
+  nameZh: '伊藤美和',
+  nameEn: 'Miwa Ito',
+  nationality: '日本',
+  category: '陶藝',
+  tags: ['#夢幻釉色', '#有機器型', '#日常療癒', '#超現實感'],
+  quote: '土不是被塑形的，它只是在找到它本來想去的地方。',
+  bio: '...',
+  works: [
+    { title: '雲邊茶碗', description: '...' },
+    // ...
+  ],
+  story: '...',
+  editorNote: '...'
+}
 ```
 
 ---
 
-## 資料流（localStorage）
+## 開發歷程 Development Notes
 
-```
-首頁點擊「Add to cart」
-        ↓
-  cart（陣列）寫入 localStorage
-        ↓
-  自動導向 /cart/step1
-        ↓
-Step 2 儲存 orderInfo.payMethod / deliveryMethod
-        ↓
-Step 3 儲存 orderInfo.receiver（姓名、電話、地址…）
-        ↓
-Step 4 讀取 cart + orderInfo 顯示完整訂單
-```
+這個專案從一份靜態 HTML / Bootstrap 原型出發，經歷了兩次重要轉折：
 
----
+**第一次轉折：技術重構**
+從靜態 HTML + CSS 重構為 Vue 3 元件化架構，將重複的 UI 模式（卡片、圖文區塊）抽取為可重用元件，大幅降低維護成本。
 
-## 商品資料結構
-
-商品資料以陣列形式統一管理於父元件，傳遞至 `ShoppingCard.vue`：
-
-```js
-const products = [
-  {
-    img: lamp2,           // import 自 src/assets/img/
-    smallTitle: '商品名稱',
-    description: '商品描述',
-    price: 1200,
-  },
-  // ...
-]
-```
+**第二次轉折：定位重構**
+品牌從「家飾選品電商」轉向「工藝觀察筆記」，這不只是文案的改變，而是整個資訊架構與設計目標的重新定義——從轉換率導向，轉向內容深度與品牌識別。
 
 ---
 
@@ -135,20 +197,15 @@ npm run build
 
 ---
 
-## 設計說明
+## 版權聲明
 
-本專案以「溫暖、質感、北歐簡約」為視覺核心，設計決策如下：
-
-- **商品卡片**：統一 `height: 220px` + `object-fit: cover`，確保所有商品圖片規格一致，視覺整齊
-- **主色調**：`#ba9393`（玫瑰粉）貫穿價格標示、按鈕邊框與 hover 效果，呼應溫暖居家氛圍
-- **hover 互動**：卡片 `transform: scale(1.05)` 輕微放大，增加選品的探索感
-- **版型節奏**：圖文交錯的 `TextImageBlock` 交替左右對齊，避免單調的垂直堆疊
+本站內容為個人欣賞與記錄，不涉及商業販售或官方授權。介紹工藝家資訊均基於公開資料整理。如對任何內容有版權疑慮，歡迎來信告知。
 
 ---
 
 ## 作者
 
-**skyun_62** — UI/UX Designer & Front-end Learner
-git add README.md
-git commit
-git push
+**skyun62** — UI/UX Designer & PM
+
+> CloudBOX — 欣賞，就是最好的保存
+> *Craft is not made to be sold. It is made to be seen.*
