@@ -59,10 +59,10 @@ const shoppingCards = [
 ]
 
 const blogCards = [
-    { img: c_1, smallTitle: 'Card title', description: 'Some quick example text to build on the card title.' },
-    { img: c_2, smallTitle: 'Card title', description: 'Some quick example text to build on the card title.' },
-    { img: c_3, smallTitle: 'Card title', description: 'Some quick example text to build on the card title.' },
-    { img: c_4, smallTitle: 'Card title', description: 'Some quick example text to build on the card title.' },
+    { id: 1, img: c_1, smallTitle: 'Card title', description: 'Some quick example text to build on the card title.' },
+    { id: 2, img: c_2, smallTitle: 'Card title', description: 'Some quick example text to build on the card title.' },
+    { id: 3, img: c_3, smallTitle: 'Card title', description: 'Some quick example text to build on the card title.' },
+    { id: 4, img: c_4, smallTitle: 'Card title', description: 'Some quick example text to build on the card title.' },
 ]
 
 const tabs = ['NEWS', 'HOT', '推薦']
@@ -82,15 +82,14 @@ const currentTab = ref('NEWS')
             </div>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <video class="d-block w-100" style="max-height: 80vh; object-fit: cover;" autoplay muted loop
+                    <!-- <video class="d-block w-100" style="max-height: 80vh; object-fit: cover;" autoplay muted loop
                         playsinline>
                         <source src="../assets/video/video_2.mp4" type="video/mp4">
-                    </video>
-
+                    </video> -->
+                    <img src="../assets/img/c_5.jpg" class="d-block w-100" alt="..." style="max-height: 80vh;">
                     <div class="text-start carousel-caption d-none d-md-block">
                         <h2 class="display-1" style="font-weight: bold;">雲端裡的潘朵拉</h2>
                         <p>一個裝滿了驚喜、細節與「不妥協」的盒子。</p>
-                        <button type="button" class="btn btn-primary btn-mg">Sign up</button>
                     </div>
                 </div>
 
@@ -101,7 +100,6 @@ const currentTab = ref('NEWS')
                     <div class="text-center carousel-caption d-none d-md-block">
                         <h2 class="display-1" style="font-weight: bold;">一種瀕臨失傳的技藝</h2>
                         <p>一塊泥土，或一根纖維的前世今生</p>
-                        <button type="button" class="btn btn-primary btn-mg">Sing up</button>
                     </div>
                 </div>
                 <div class="carousel-item">
@@ -109,7 +107,6 @@ const currentTab = ref('NEWS')
                     <div class="text-end carousel-caption d-none d-md-block">
                         <h2 class="display-1" style="font-weight: bold;">火光點燃的瞬間</h2>
                         <p>也是我們想留住的時刻</p>
-                        <button type="button" class="btn btn-primary btn-mg">Sing up</button>
                     </div>
                 </div>
             </div>
@@ -147,8 +144,8 @@ const currentTab = ref('NEWS')
                             粗獷的原始材料中加入鮮豔、溫暖的色彩，讓作品在冷靜的結構中帶有玩味與感性
                         </template>
                         <template #action>
-                            <router-link to="/craftsman/1" class="btn btn-secondary">
-                                View detail
+                            <router-link to="/craftsman/1" class="btn btn-secondary" style="background-color: #ba9393; color: white;"">
+                                read more
                             </router-link>
                         </template>
                     </Role>
@@ -162,8 +159,8 @@ const currentTab = ref('NEWS')
                             專注於讓日常器皿具備藝術裝飾性，平衡了實用功能與詩意的美學
                         </template>
                         <template #action>
-                            <router-link to="/craftsman/2" class="btn btn-secondary">
-                                View detail
+                            <router-link to="/craftsman/2" class="btn btn-secondary" style="background-color: #ba9393; color: white;"">
+                                read more
                             </router-link>
                         </template>
                     </Role>
@@ -177,8 +174,8 @@ const currentTab = ref('NEWS')
                             台灣玻璃工藝者，從工業設計走向傳統玲瓏窯，將日常記憶凝結成晶瑩的工藝詩篇。
                         </template>
                         <template #action>
-                            <router-link to="/craftsman/3" class="btn btn-secondary">
-                                View detail
+                            <router-link to="/craftsman/3" class="btn btn-secondary" style="background-color: #ba9393; color: white;"">
+                                read more
                             </router-link>
                         </template>
                     </Role>
@@ -188,7 +185,7 @@ const currentTab = ref('NEWS')
         <!-- 表格標題 -->
         <section class="row d-flex justify-content-center justify-content-center text-center p-5">
             <span class="fs-2">每一件工藝品，也許都是某個人一生的偏執</span>
-            <p>你未必知道所謂工藝的技法，但只需要感受那種「用心」的瞬間，那一刻，便是分享的起點。</p>
+            <p>感受那種「用心」的瞬間，那一刻，便是分享的起點。</p>
             <div class="bg-secondary" style="width: 100px; height: 3px;"></div>
         </section>
 
@@ -244,7 +241,7 @@ const currentTab = ref('NEWS')
                     <div class="bg-secondary m-2" style="width: 100px; height: 3px;"></div>
                 </div>
                 <div class="col-12 col-md-8 d-flex align-items-center">
-                    <span>曾經有個摯友跟我說過一段我很喜歡的話，他說：「買一個人的產品就像是買了他的故事、奮鬥，是因為有這些經歷他才可以做出這個東西、然後賣給你。」</span>
+                    <span>曾經有個朋友跟我說過一段我很喜歡的話，他說：「買一個人的產品就像是買了他的故事、奮鬥，是因為有這些經歷他才可以做出這個東西、然後賣給你。」</span>
                 </div>
             </div>
         </section>
@@ -253,7 +250,7 @@ const currentTab = ref('NEWS')
         <section>
             <PhotoMosaic />
         </section>
-        <section class="mt-5">
+        <section class="mt-5" style="overflow: hidden;">
             <div class="row p-5">
                 <div class="col-12 col-md-4">
                     <span class="fs-4">一輩子專心做一件事的工藝家</span>
@@ -378,14 +375,14 @@ const currentTab = ref('NEWS')
         </div>
         <!-- 部落格卡片 -->
         <section class="row">
-            <BlogCard v-for="(card, index) in blogCards" :key="index" :img="card.img" :smallTitle="card.smallTitle"
+            <BlogCard v-for="(card, index) in blogCards" :id="card.id" :key="index" :img="card.img" :smallTitle="card.smallTitle"
                 :description="card.description" />
 
         </section>
 
 
 
-        
+
 
 
         <!-- 地圖資訊 -->
@@ -454,6 +451,31 @@ const currentTab = ref('NEWS')
 </template>
 
 <style scoped>
+/* ===== 修正手機版 PhotoMosaic 溢出問題 ===== */
+section:has(> .photo-mosaic),
+/* 若 PhotoMosaic 根元素有 class */
+section {
+    overflow: hidden;
+    /* 防止子元素絕對定位溢出 */
+    position: relative;
+}
+
+/* ===== 修正手機版 Swiper 拍立得排列 ===== */
+@media (max-width: 768px) {
+    .swiper-slide {
+        flex-wrap: wrap;
+        /* 允許換行，不強制一排 */
+        gap: 16px;
+        justify-content: center;
+        padding: 10px 0;
+    }
+
+    .polaroid {
+        max-width: 160px;
+        /* 手機版縮小拍立得 */
+    }
+}
+
 /*================== 拍立得滑動 */
 .swiper-slide {
     display: flex;

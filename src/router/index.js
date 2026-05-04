@@ -4,6 +4,7 @@ import HomeView from '@/views/HomeView.vue'
 import AboutView from '@/views/AboutView.vue'
 import AlbumView from '@/views/AlbumView.vue'
 import PhotoView from '@/views/PhotoView.vue'
+import BlogDetail from '@/views/BlogDetail.vue'
 import CraftsmanDetail from '@/views/CraftsmanDetail.vue'
 
 import CartStep1 from '@/views/CartStep1.vue'
@@ -40,6 +41,9 @@ const router = createRouter({
     },
     {
       path: '/craftsman/:id', name: 'CraftsmanDetail', component: CraftsmanDetail
+    },
+    {
+      path: '/blog/:id', name: 'BlogDetail', component: BlogDetail
     },
     { path: '/cart/step1', name: 'cart-step1', component: CartStep1 },
     { path: '/cart/step2', name: 'cart-step2', component: CartStep2 },

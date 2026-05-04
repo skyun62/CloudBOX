@@ -29,14 +29,6 @@ const skills = [
                     雲端裡的潘朵拉
                     <br>✦ Curated with intention. Lived in with love.
                 </p>
-                <div class="hero-btns">
-                    <a href="https://www.104.com.tw" target="_blank" rel="noopener" class="btn-primary-custom">
-                        Resume <i class="bi bi-arrow-up-right"></i>
-                    </a>
-                    <RouterLink to="/" class="btn-ghost-custom">
-                        Back to Home
-                    </RouterLink>
-                </div>
             </div>
         </section>
 
@@ -62,7 +54,7 @@ const skills = [
 
                     <h2 class="section-title">About source</h2>
                     <p>
-                        影像版權屬原創者所有。本站經授權後透過Official Instagram Embedding 嵌入，純屬非營利分享，若需調整或移除，請隨時聯繫。
+                        影像版權屬原創者所有。本站透過Official Instagram Embedding 嵌入，純屬非營利分享，若需調整或移除，請隨時聯繫。
                     </p>
                     <!-- 表格 -->
                     <DataTable @select="(row) => console.log('選到', row)" />
@@ -78,37 +70,6 @@ const skills = [
                             <span class="info-label">聯繫</span>
                             <a href="mailto:your@email.com" class="info-link">skyhuschi@email.com</a>
                         </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <div class="divider"></div>
-
-        <!-- 旅行照片牆（純裝飾） -->
-        <section class="photo-strip container">
-            <h2 class="section-title text-center mb-4">Travel Shots</h2>
-            <div class="strip-grid">
-                <div class="strip-item tall">
-                    <img src="https://picsum.photos/400/600?10" alt="">
-                </div>
-                <div class="strip-col">
-                    <div class="strip-item">
-                        <img src="https://picsum.photos/400/300?11" alt="">
-                    </div>
-                    <div class="strip-item">
-                        <img src="https://picsum.photos/400/300?12" alt="">
-                    </div>
-                </div>
-                <div class="strip-item tall">
-                    <img src="https://picsum.photos/400/600?13" alt="">
-                </div>
-                <div class="strip-col">
-                    <div class="strip-item">
-                        <img src="https://picsum.photos/400/300?14" alt="">
-                    </div>
-                    <div class="strip-item">
-                        <img src="https://picsum.photos/400/300?15" alt="">
                     </div>
                 </div>
             </div>
@@ -131,7 +92,7 @@ const skills = [
     display: flex;
     align-items: center;
     gap: 100px;
-    padding: 80px 10vw 60px;
+    padding: 80px 10vw;
     background: linear-gradient(135deg, #eaf4fb 0%, #f8f6f3 60%);
     flex-wrap: wrap;
 }
@@ -145,23 +106,12 @@ const skills = [
     width: 340px;
     height: 340px;
     object-fit: cover;
-    border-radius: 4px 40px 4px 40px;
+    border-radius: 4px;
     display: block;
     position: relative;
     z-index: 1;
 }
 
-/* 右下角裝飾方塊 */
-.hero-deco {
-    position: absolute;
-    bottom: -14px;
-    right: -14px;
-    width: 100%;
-    height: 100%;
-    border: 2px solid #ba9393;
-    border-radius: 4px 40px 4px 40px;
-    z-index: 0;
-}
 
 .hero-tag {
     font-size: 13px;
@@ -190,63 +140,19 @@ const skills = [
     color: #555;
     line-height: 1.9;
     font-size: 15px;
-    margin-bottom: 32px;
+    margin-bottom: 16px;
     max-width: 380px;
     font-family: 'Jost', 'Noto Serif TC', sans-serif;
     font-weight: 300;
 }
 
-.hero-btns {
-    display: flex;
-    gap: 16px;
-    flex-wrap: wrap;
-}
-
-.btn-primary-custom {
-    background: #3a8fb7;
-    color: #fff;
-    padding: 12px 28px;
-    border-radius: 4px;
-    text-decoration: none;
-    font-size: 14px;
-    letter-spacing: 0.5px;
-    transition: background 0.2s, transform 0.2s;
-    display: inline-flex;
-    align-items: center;
-    gap: 6px;
-    font-family: 'Jost', sans-serif;
-    font-weight: 300;
-}
-
-.btn-primary-custom:hover {
-    background: #2f7da0;
-    transform: translateY(-2px);
-    color: #fff;
-}
-
-.btn-ghost-custom {
-    border: 1px solid #ba9393;
-    color: #ba9393;
-    padding: 12px 28px;
-    border-radius: 4px;
-    text-decoration: none;
-    font-size: 14px;
-    transition: background 0.2s, transform 0.2s;
-    font-family: 'Jost', sans-serif;
-    font-weight: 300;
-}
-
-.btn-ghost-custom:hover {
-    background: #fdf4f4;
-    transform: translateY(-2px);
-}
 
 /* ===== 分隔線 ===== */
 .divider {
-    width: 80px;
+    width: 100px;
     height: 2px;
     background: #ba9393;
-    margin: 60px auto;
+    margin: 30px auto;
     border-radius: 2px;
 }
 
@@ -342,7 +248,7 @@ const skills = [
     flex-direction: column;
     gap: 12px;
     border-top: 1px solid #e8e0e0;
-    padding-top: 20px;
+    padding: 40px 10px;
 }
 
 .info-row {

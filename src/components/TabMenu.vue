@@ -31,7 +31,7 @@ const selectTab = (tab) => {
     display: flex;
     gap: 0; 
     margin-bottom: 0; 
-    width: 100%; 
+    width: 100%;
 }
 
 .tab-btn {

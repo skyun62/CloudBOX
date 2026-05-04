@@ -1,0 +1,314 @@
+[
+    {
+        "id": 1,
+        "title": "火焰與玻璃之間：Marten Herma Anderson 的色彩哲學",
+        "subtitle": "當粗獷的原始材料遇上鮮豔色彩，一件作品如何在冷靜中帶有溫度？",
+        "category": "工藝家故事",
+        "date": "2026年4月18日",
+        "readTime": "6 分鐘閱讀",
+        "coverImg": "https://picsum.photos/1200/600?random=10",
+        "craftsman": {
+            "id": 1,
+            "name": "Marten Herma Anderson",
+            "avatar": "https://picsum.photos/80/80?random=20",
+            "ig": "https://www.instagram.com/mrtn.ndrsn/",
+            "igHandle": "@mrtn.ndrsn"
+        },
+        "externalLinks": [
+            {
+                "label": "工藝家 Instagram",
+                "url": "https://www.instagram.com/mrtn.ndrsn/"
+            },
+            {
+                "label": "展覽資訊 — Copenhagen Glass",
+                "url": "https://www.copenhagenglass.dk/"
+            },
+            {
+                "label": "相關報導 — Craft Magazine",
+                "url": "https://www.craftscouncil.org.uk/craft-magazine"
+            }
+        ],
+        "tags": [
+            "玻璃工藝",
+            "北歐設計",
+            "當代工藝",
+            "色彩"
+        ],
+        "content": [
+            {
+                "type": "paragraph",
+                "text": "第一次見到 Marten 的作品，是在一個光線偏弱的展間裡。那件玻璃器皿放在木台上，沒有特別的打光，卻自己發著光。不是因為材質透明，而是那個橙紅色，彷彿內部還留著一點火焰的記憶。"
+            },
+            {
+                "type": "quote",
+                "text": "「我不是在做美麗的東西。我是在試著保存一個瞬間——那個材料剛剛還是液體、下一秒就會永遠定型的瞬間。」",
+                "author": "Marten Herma Anderson"
+            },
+            {
+                "type": "paragraph",
+                "text": "他的工作室在哥本哈根郊外的一棟舊倉庫裡。牆上掛著各種比例的草圖，不是設計圖，比較像是色彩筆記——哪個紅和哪個橘放在一起會爆炸，哪個藍和哪個灰能共存。Marten 本人比作品溫柔很多，說話慢，會在句子中間停下來思考。"
+            },
+            {
+                "type": "image",
+                "src": "https://picsum.photos/900/500?random=11",
+                "caption": "Marten 工作室一景，攝於 2024 年冬。"
+            },
+            {
+                "type": "heading",
+                "text": "材料本身就是觀點"
+            },
+            {
+                "type": "paragraph",
+                "text": "玻璃吹製是一種需要與時間賽跑的工藝。熔融狀態的玻璃只有幾分鐘可以塑形，這迫使工藝家必須在製作之前就對形狀有極度清晰的想像。Marten 說，他每天早上會先在腦海裡把當天要做的作品完整地「看」一遍，再走進工作室。"
+            },
+            {
+                "type": "heading",
+                "text": "為什麼工藝品值得被分享"
+            },
+            {
+                "type": "paragraph",
+                "text": "曾有人問我，為什麼要紹工藝家？我的答案每次都一樣：因為這些東西是有人在裡面的。每一件作品背後，是某人決定把自己這輩子的注意力，花在這件事上。這本身就是一種稀有。"
+            }
+        ],
+        "relatedArticles": [
+            2,
+            3,
+            4
+        ]
+    },
+    {
+        "id": 2,
+        "title": "伊藤美和的器皿詩學：讓日常成為儀式",
+        "subtitle": "一只碗、一個杯子，如何讓每一次使用都成為與美的相遇？",
+        "category": "工藝家故事",
+        "date": "2026年3月22日",
+        "readTime": "5 分鐘閱讀",
+        "coverImg": "https://picsum.photos/1200/600?random=21",
+        "craftsman": {
+            "id": 2,
+            "name": "いとう みわ（伊藤美和）",
+            "avatar": "https://picsum.photos/80/80?random=22",
+            "ig": "https://www.instagram.com/miwaito.official/",
+            "igHandle": "@miwaito.official"
+        },
+        "externalLinks": [
+            {
+                "label": "工藝家 Instagram",
+                "url": "https://www.instagram.com/miwaito.official/"
+            },
+            {
+                "label": "伊藤美和官方網站",
+                "url": "https://www.miwaito.com/"
+            },
+            {
+                "label": "日本工藝館介紹",
+                "url": "https://www.nihonkogeikai.or.jp/"
+            }
+        ],
+        "tags": [
+            "玻璃工藝",
+            "日本美學",
+            "器皿",
+            "日常設計"
+        ],
+        "content": [
+            {
+                "type": "paragraph",
+                "text": "伊藤美和的作品不是用來看的，是用來用的。這句話聽起來很平常，但當你真的把她做的杯子拿在手裡，才會明白這句話有多重。杯沿的厚度、底部的弧度、透光的程度——每一個細節都像是有人很認真地替你想過。"
+            },
+            {
+                "type": "quote",
+                "text": "「器皿是生活的容器。它的形狀，應該要能裝下使用者的心情。」",
+                "author": "伊藤美和"
+            },
+            {
+                "type": "paragraph",
+                "text": "她在京都有一間很小的工作室，靠近哲學之道。每天早上，她會先泡一壺茶，用自己做的杯子喝，然後才開始工作。她說這是一種校準——確認今天的自己，和昨天的作品還在同一個頻率上。"
+            },
+            {
+                "type": "image",
+                "src": "https://picsum.photos/900/500?random=23",
+                "caption": "伊藤美和工作室展示架，攝於 2025 年春。"
+            },
+            {
+                "type": "heading",
+                "text": "實用與詩意的平衡"
+            },
+            {
+                "type": "paragraph",
+                "text": "她最知名的系列叫「朝露」，每件作品的表面都有細小的氣泡，像是清晨草地上還沒蒸發的露水。這個效果不是偶然，是她花了三年反覆試驗溫度控制才得到的結果。但如果你問她，她只會說：「就是想讓它看起來剛剛醒來的樣子。」"
+            },
+            {
+                "type": "heading",
+                "text": "日常中的美感練習"
+            },
+            {
+                "type": "paragraph",
+                "text": "我們常常把美感當成一種特權，覺得它存在於美術館或精品店。但伊藤美和做的事情剛好相反——她把美感放進最日常的動作裡：喝水、盛飯、倒酒。她說，如果一個人每天早上都用一只讓自己覺得好看的杯子喝咖啡，他這一天的開始就不一樣了。"
+            }
+        ],
+        "relatedArticles": [
+            1,
+            3,
+            4
+        ]
+    },
+    {
+        "id": 3,
+        "title": "玻璃吹製入門：從熔爐到成品的七個關鍵步驟",
+        "subtitle": "一塊砂礦如何在高溫與呼吸之間，變成一件晶瑩的器物？",
+        "category": "工藝技法",
+        "date": "2026年2月10日",
+        "readTime": "8 分鐘閱讀",
+        "coverImg": "https://picsum.photos/1200/600?random=31",
+        "craftsman": {
+            "id": 3,
+            "name": "陳建志（Chien Chih Chen）",
+            "avatar": "https://picsum.photos/80/80?random=32",
+            "ig": "https://www.instagram.com/ccc.117/",
+            "igHandle": "@ccc.117"
+        },
+        "externalLinks": [
+            {
+                "label": "工藝家 Instagram",
+                "url": "https://www.instagram.com/ccc.117/"
+            },
+            {
+                "label": "台灣工藝研究發展中心",
+                "url": "https://www.ntcri.gov.tw/"
+            },
+            {
+                "label": "玻璃工藝博物館 — 新竹",
+                "url": "https://www.hcgm.gov.tw/"
+            }
+        ],
+        "tags": [
+            "玻璃工藝",
+            "工藝技法",
+            "吹製",
+            "台灣工藝"
+        ],
+        "content": [
+            {
+                "type": "paragraph",
+                "text": "玻璃吹製是世界上最古老的玻璃成形技術之一，起源於西元前一世紀的敘利亞。兩千年後的今天，工藝家仍然用幾乎相同的方式，把熔融的玻璃液變成各種形狀。這個過程既原始又精準，既危險又溫柔。"
+            },
+            {
+                "type": "heading",
+                "text": "第一步：熔製"
+            },
+            {
+                "type": "paragraph",
+                "text": "玻璃在攝氏 1100 度以上才會完全熔化成可塑形的液態。熔爐通常 24 小時運作，因為每次加熱冷卻都會消耗大量能源，也容易讓爐壁產生裂縫。工藝家通常在清晨溫度最穩定的時候進行吹製。"
+            },
+            {
+                "type": "image",
+                "src": "https://picsum.photos/900/500?random=33",
+                "caption": "陳建志工作室的熔爐，溫度常年維持在 1100°C 以上。"
+            },
+            {
+                "type": "heading",
+                "text": "第二步：挑料與初吹"
+            },
+            {
+                "type": "paragraph",
+                "text": "用一根中空的鐵管（吹管）伸入熔爐，旋轉沾取適量玻璃液，稱為「挑料」。接著在鐵管尾端輕輕吹氣，在玻璃液中央形成一個小氣泡。這個動作決定了整件作品的基礎形狀，需要多年練習才能掌握力道。"
+            },
+            {
+                "type": "quote",
+                "text": "「第一口氣最重要。太用力，氣泡破；太輕，玻璃定型前就冷卻了。這個感覺，只能用身體記。」",
+                "author": "陳建志"
+            },
+            {
+                "type": "heading",
+                "text": "從技法到美學"
+            },
+            {
+                "type": "paragraph",
+                "text": "陳建志在學習傳統玲瓏窯技法之前，曾是一名工業設計師。他說，設計師思考的是「如何讓更多人用」，工藝家思考的是「如何讓一個人好好用」。這個轉變讓他的作品有一種特殊的氣質：精準但不冷漠，精緻但不脆弱。"
+            }
+        ],
+        "relatedArticles": [
+            1,
+            2,
+            4
+        ]
+    },
+    {
+        "id": 4,
+        "title": "台中，工藝的另一個起點",
+        "subtitle": "在這座城市的角落裡，有人正在用雙手重新定義「台灣製造」。",
+        "category": "展覽紀錄",
+        "date": "2026年1月5日",
+        "readTime": "4 分鐘閱讀",
+        "coverImg": "https://picsum.photos/1200/600?random=41",
+        "craftsman": {
+            "id": 3,
+            "name": "陳建志（Chien Chih Chen）",
+            "avatar": "https://picsum.photos/80/80?random=42",
+            "ig": "https://www.instagram.com/ccc.117/",
+            "igHandle": "@ccc.117"
+        },
+        "externalLinks": [
+            {
+                "label": "台中工藝聚落地圖",
+                "url": "https://www.ntcri.gov.tw/"
+            },
+            {
+                "label": "2025 台灣工藝節活動",
+                "url": "https://www.ntcri.gov.tw/"
+            },
+            {
+                "label": "南屯區工藝街廓導覽",
+                "url": "https://www.taichung.gov.tw/"
+            }
+        ],
+        "tags": [
+            "台中",
+            "展覽",
+            "台灣工藝",
+            "城市漫遊"
+        ],
+        "content": [
+            {
+                "type": "paragraph",
+                "text": "台中的南屯區，有一條不起眼的巷子。走進去之前你可能以為是普通住宅區，但推開一扇生鏽的鐵門後，是一個挑高四米的工作室，裡面住著三位工藝家和幾千件正在等待完成的作品。"
+            },
+            {
+                "type": "paragraph",
+                "text": "這是 CloudBOX 的所在地，也是我們這次展覽的起點。我們想做的事情很簡單：把這裡正在發生的事，讓更多人看見。"
+            },
+            {
+                "type": "image",
+                "src": "https://picsum.photos/900/500?random=43",
+                "caption": "展覽現場，2026 年元月。408台中市南屯區向上路二段168號4樓。"
+            },
+            {
+                "type": "heading",
+                "text": "工藝不是懷舊，是一種選擇"
+            },
+            {
+                "type": "paragraph",
+                "text": "很多人談到工藝，會用「傳承」、「消失」這類帶著哀愁的詞。但我在這些工藝家身上看到的，不是對過去的依戀，而是一種非常當代的選擇——在一個什麼都可以批量生產的時代，他們選擇用雙手，慢慢地做。"
+            },
+            {
+                "type": "quote",
+                "text": "「我不是在跟時代對抗。我只是找到了一件讓我覺得值得花時間的事。」",
+                "author": "陳建志"
+            },
+            {
+                "type": "heading",
+                "text": "展覽後記"
+            },
+            {
+                "type": "paragraph",
+                "text": "這次展覽開幕那天，來了很多意外的訪客。有附近的居民，有特地從台北下來的收藏家，還有一個國中生，他在陳建志的作品前站了很久，後來問：「這個是怎麼做的？」我覺得這個問題，就是這個展覽存在的理由。"
+            }
+        ],
+        "relatedArticles": [
+            1,
+            2,
+            3
+        ]
+    }
+]

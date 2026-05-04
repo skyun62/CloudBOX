@@ -29,7 +29,6 @@ function onSelect(row) {
                 <th scope="col">#</th>
                 <th scope="col">Name</th>
                 <th scope="col">Instagram</th>
-                <th scope="col">Handle</th>
                 <th scope="col">Instagram Official Embed</th>
             </tr>
         </thead>
@@ -38,7 +37,6 @@ function onSelect(row) {
                 <th scope="row">{{ row.id }}</th>
                 <td>{{ row.name }}</td>
                 <td>{{ row.instagram }}</td>
-                <td>{{ row.handle }}</td>
                 <td>
                     <input type="checkbox" checked disabled />
                 </td>

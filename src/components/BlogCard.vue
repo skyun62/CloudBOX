@@ -1,5 +1,6 @@
 <script setup>
 defineProps({
+    id: { type: Number, required: true },
     img: { type: String, required: true },
     smallTitle: { type: String, default: 'Card title' },
     description: { type: String, default: '' },
@@ -13,6 +14,9 @@ defineProps({
             <div class="card-body">
                 <h5 class="card-title">{{ smallTitle }}</h5>
                 <p class="card-text">{{ description }}</p>
+                <router-link :to="`/blog/${id}`" class="btn" style="background-color: #ba9393; color: white;">
+                    read more
+                </router-link>
             </div>
         </div>
     </div>
