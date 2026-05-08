@@ -33,7 +33,7 @@ function goNext() {
 
             <!-- 進度條 -->
             <section>
-                <span class="fw-bold fs-5">購物車</span>
+                <span class="fw-bold fs-5">合作提案</span>
                 <CartProgress :currentStep="3" />
             </section>
 

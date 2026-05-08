@@ -1,52 +1,59 @@
 <script setup>
 import { computed } from 'vue'
 import { useRoute } from 'vue-router'
+import glasser_geme2 from '../assets/img/glasser_geme2.png'
+import glasser_japan from '../assets/img/glasser_japan.jpg'
+import glasser_taiwan from '../assets/img/glasser_taiwan.jpg'
 
 const craftsmen = [
     {
         "id": 1,
         "name": "Marten Herma Anderson",
         "origin": "德國",
-        "year": 1990,
-        "material": "繪畫 / 數位介質",
-        "quote": "色彩的沈默有時比聲音更響亮。",
-        "description": "致力於極簡主義與色彩理論的探索，透過色塊與線條的對話尋找空間的平衡。",
-        "story": "Marten 的創作深受柏林城市景觀與包浩斯風格影響。他習慣將複雜的視覺元素簡化至極致，讓觀者在單純的色塊中感受情緒的起伏與空間的深度。",
-        "tags": ["#極簡主義", "#當代藝術", "#色彩理論", "#德國藝術家", "#抽象表現"],
-        "works": 42,
-        "exhibitions": 12,
-        "awards": 4,
-        "gallery": ["藍色構圖 01", "重疊的平面", "晨曦之影", "線條與節奏"]
+        "year": 1989,
+        "material": "建築 / 陶藝",
+        "quote": "Sometimes things don't work out the way you thought they would...\n有時候，事情總會不如預期...",
+        "description": "Marten Herma Anderson 是一位穿梭於雕塑、設計與建築領域的多棲藝術家。他出生並成長於波羅的海的呂根島（Rügen），幼年時期深受海岸景觀的荒涼之美與東德時期（GDR）建築的重複結構影響。",
+        "story": "他擁有深厚的建築背景，目前於柏林的知名設計工作室 Gisbert Pöppler 工作，專注於室內設計與家具細節。\n其實說了這麼多，筆者我倒覺得他不像一個特別商業的藝術家，反而有時候，像個也正在質疑生活、將這份質疑轉化為創作靈感的一個熱愛自拍的帥哥與普通人，他不吝嗇表露自己在創作上遇到的瓶頸，例如：拍攝一塊雕刻精美卻掉落於地板的陶土，配上一段「事情總是不如預期」的文案\n在他的藝術創作生涯中，也許不一定一帆風順，卻總有「驚奇」",
+        "special": "欲探索更多作品故事，請至藝術家官方網站。本站旨在分享與介紹其創作精神。",
+        "tags": ["#MartenHermaAnderson", "#當代藝術", "#建築", "#德國藝術家", "#物質記憶", "#柏林設計"],
+        "works": 'n',
+        "exhibitions": 'n',
+        "awards": 'n',
+        "image": glasser_geme2
     },
     {
         "id": 2,
         "name": "いとう みわ (伊藤美和)",
         "origin": "日本",
-        "year": 1975,
-        "material": "陶藝創作",
-        "quote": "器皿是盛裝生活溫度的容器。",
-        "description": "以細膩的陶藝工法結合日常觀察，創作出具備手感溫度且充滿詩意的生活器物。",
-        "story": "伊藤美和在常滑市研習陶藝多年，她擅長捕捉大自然中微小的變化。對她而言，陶土不只是素材，更是連結土地與使用者生活記憶的媒介。",
-        "tags": ["#日本工藝", "#現代陶藝", "#器皿設計", "#手作美學", "#生活物件"],
-        "works": 120,
-        "exhibitions": 25,
-        "awards": 8,
-        "gallery": ["暖白裂紋杯", "四季之盤", "森林花器", "土地呼吸系列"]
+        "year": '1987–1988',
+        "material": "玻璃",
+        "quote": "My glassblowing practice begins with faith in what cannot be seen.\n對無形之物的信念，是我玻璃創作的起點",
+        "description": "居住在日本大阪的玻璃藝術家。\n出生於大阪。 2018年畢業於近台大學藝術系玻璃工藝專業。\n從那時起，她就一直在玻璃吹製工作室 GGG 擔任員工。\n她的作品透過從動物、食物和日常物品中汲取靈感的趣味形式，探索了生活、感恩和靜謐之美等主題。",
+        "story": "將指尖下的吹製玻璃轉化為虔誠的禱告。深受金光教『大地即神祇』的宇宙觀啟蒙，她致力於捕捉日常中微小而神聖的瞬間。透過通透的玻璃媒介，她將無形的感恩與平靜的內在力量，淬煉成一件件溫潤且充滿韌性的藝術品。",
+        "special": "欲探索更多作品故事，請至藝術家官方網站。本站旨在分享與介紹其創作精神。",
+        "tags": ["#MartenHermaAnderson", "#當代藝術", "#建築", "#德國藝術家", "#物質記憶", "#柏林設計"],
+        "tags": ["#MiwaIto", "#玻璃藝術", "#精神存在", "#金光教", "#靈性創作", "#無形之美"],
+        "works": 'n',
+        "exhibitions": 'n',
+        "awards": 'n',
+        "image": glasser_japan
     },
     {
         "id": 3,
         "name": "陳建志 (Chien-Chih, Chen)",
         "origin": "台灣",
-        "year": 1994,
+        "year": 1987,
         "material": "吹製玻璃",
-        "quote": "我向一無所有的白學習，也向繁複無盡的白學習。",
-        "description": "融合傳統吹製技法與現代設計，擅長運用乳白玻璃原料，在透明與半透明間捕捉光影流動的記憶。",
-        "story": "出生於南投，銘傳大學商品設計系畢業後，在一次偶然中深受玻璃製作過程吸引，決定投入新竹「玲瓏窯」跟隨林瑤農大師學習。他創立了 CCC Glass Works，將玻璃視為記錄時間與情感的容器，特別珍惜在製作過程中產生的隨機性與手工痕跡。",
-        "tags": ["#吹製玻璃", "#新竹工藝", "#CCC玻璃製作所", "#白玉系列", "#當代工藝"],
-        "works": 85,
-        "exhibitions": 10,
-        "awards": 5,
-        "gallery": ["黑玉系列", "白玉系列", "記憶之壺", "水鏡浮島"]
+        "quote": "我花了好幾年才克服瓶子拉直的問題，又花了幾年才發現歪歪的，也不錯。",
+        "description": "一位深耕於台灣新竹的玻璃工藝家。他的藝術生涯始於最基層的學徒制磨練。他擅長捕捉玻璃在液態與固態轉換間的瞬間美感，也關注環境永續議題，致力於將廢棄素材轉化為高品質的藝術創作。",
+        "story": "出生於南投，銘傳大學商品設計系畢業後，在一次偶然中深受玻璃製作過程吸引，決定投入新竹「玲瓏窯」跟隨林瑤農大師學習。\n筆者我出社會後有經歷一段迷茫的日子，曾經有想過要去當全職學徒，就是在那樣渴求創造的形況下知道原來台灣有這樣一位玻璃工藝家，碰巧，老師一開始也是由學徒開始，他的故事讓我多了分親切感。\n每個作品、每張貼文都有工藝家自己的體悟，有時候是小品文，有時候只是隨口呢喃，不管哪一種，我鮮少嗅到太過商業的味道，至少，在我看來，只是一個匠人在紀錄自己的工作日常，匠心獨運。",
+        "special": "欲探索更多作品故事，請至藝術家官方網站。本站旨在分享與介紹其創作精神。",
+        "tags": ["#ChienChihChen", "#台灣玻璃工藝", "#黑玉系列", "#職人精神", "#當代工藝", "#永續藝術"],
+        "works": 'n',
+        "exhibitions": 'n',
+        "awards": 'n',
+        "image": glasser_taiwan
     }
 ]
 
@@ -55,11 +62,25 @@ const craftsman = computed(() =>
     craftsmen.find(c => c.id === Number(route.params.id))
 )
 
+// 將 image 欄位轉成 hero-img 的 inline style
+const heroImgStyle = computed(() => {
+    const img = craftsman.value?.image
+    if (img) {
+        return {
+            backgroundImage: `url('${img}')`,
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+        }
+    }
+    // 無圖片時顯示預設佔位漸層
+    return {
+        background: 'linear-gradient(160deg, #e4e0d8 0%, #cdc8be 100%)',
+    }
+})
 </script>
 
 <template>
     <div v-if="craftsman" class="page">
-
         <!-- NAV -->
         <nav class="nav">
             <router-link to="/" class="back">
@@ -76,27 +97,23 @@ const craftsman = computed(() =>
         <header class="hero">
             <div class="hero-left">
                 <div class="hero-img-wrap">
-                    <div class="hero-img"></div>
+                    <!-- ✅ 用 heroImgStyle 動態帶入圖片 -->
+                    <div class="hero-img" :style="heroImgStyle"></div>
                     <div class="hero-img-meta">
                         <span>{{ craftsman.material }}</span>
-                        <span>Est. {{ craftsman.year }}</span>
+                        <span>Born in {{ craftsman.year }}</span>
                     </div>
                 </div>
             </div>
-
             <div class="hero-right">
                 <p class="hero-index">No.0{{ craftsman.id }}</p>
                 <h1 class="hero-name">{{ craftsman.name }}</h1>
                 <p class="hero-origin">{{ craftsman.origin }}</p>
-
                 <div class="tags">
                     <span v-for="tag in craftsman.tags" :key="tag" class="tag">{{ tag }}</span>
                 </div>
-
                 <div class="hero-rule"></div>
-
                 <p class="hero-desc">{{ craftsman.description }}</p>
-
                 <div class="stats">
                     <div class="stat">
                         <span class="stat-val">{{ craftsman.works }}</span>
@@ -133,6 +150,15 @@ const craftsman = computed(() =>
             </div>
         </section>
 
+        <!-- 特色事跡 -->
+        <section class="story-section">
+            <div class="story-label">
+                <span>其他作品與特色事跡</span>
+            </div>
+            <div class="story-body">
+                <p>{{ craftsman.special }}</p>
+            </div>
+        </section>
     </div>
 
     <!-- NOT FOUND -->
@@ -231,8 +257,7 @@ const craftsman = computed(() =>
     width: 100%;
     height: 100%;
     min-height: 600px;
-    background: linear-gradient(160deg, #e4e0d8 0%, #cdc8be 100%);
-    /* 換成真實圖片：background: url('...') center/cover */
+    /* background 由 :style binding 控制，這裡只保留尺寸設定 */
 }
 
 .hero-img-meta {
@@ -257,7 +282,7 @@ const craftsman = computed(() =>
 }
 
 .hero-right {
-    padding: 5rem 4rem;
+    padding: 3rem 0 3rem 4rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -304,7 +329,7 @@ const craftsman = computed(() =>
     color: #888;
     border: 1px solid #e0e0e0;
     padding: 4px 10px;
-    border-radius: 2px;
+    border-radius: 8px;
     transition: border-color 0.2s, color 0.2s;
     cursor: default;
 }
@@ -326,7 +351,6 @@ const craftsman = computed(() =>
     line-height: 1.9;
     color: #666;
     margin-bottom: 3rem;
-    max-width: 32ch;
 }
 
 /* STATS */
@@ -360,11 +384,13 @@ const craftsman = computed(() =>
 
 /* ── QUOTE ── */
 .quote-section {
+    white-space: pre-line;
     border-top: 1px solid #e8e8e8;
     border-bottom: 1px solid #e8e8e8;
 }
 
 .quote-inner {
+    white-space: pre-line;
     max-width: 760px;
     margin: 0 auto;
     padding: 3rem 2rem;
@@ -417,12 +443,11 @@ const craftsman = computed(() =>
 }
 
 .story-body p {
+    white-space: pre-line;
     font-size: 15px;
     line-height: 2;
     color: #555;
 }
-
-
 
 /* ── NOT FOUND ── */
 .not-found {
@@ -472,22 +497,6 @@ const craftsman = computed(() =>
         grid-template-columns: 1fr;
         padding: 4rem 3rem;
         gap: 1.5rem;
-    }
-
-    .gallery-grid {
-        grid-template-columns: 1fr 1fr;
-    }
-
-    .g-item:nth-child(2) {
-        border-right: none;
-    }
-
-    .g-item:nth-child(3) {
-        border-right: 1px solid #e8e8e8;
-    }
-
-    .g-item:nth-child(4) {
-        border-right: none;
     }
 }
 </style>

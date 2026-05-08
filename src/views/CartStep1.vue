@@ -51,20 +51,20 @@ function goNext() {
 
             <!-- 標題 + 進度條 -->
             <section>
-                <span class="fw-bold fs-5">購物車</span>
+                <span class="fw-bold fs-5">合作提案</span>
                 <CartProgress :currentStep="1" />
             </section>
 
             <hr>
 
-            <!-- 訂單明細 -->
+            <!-- 合作明細 -->
             <section>
                 <div class="d-flex justify-content-between align-items-center mb-3">
-                    <span class="fw-bold fs-5">訂單明細</span>
-                    <button class="btn btn-danger btn-sm" @click="clearCart">清空購物車</button>
+                    <span class="fw-bold fs-5">合作明細</span>
+                    <button class="btn btn-danger btn-sm" @click="clearCart">清空訂單</button>
                 </div>
 
-                <p v-if="cart.length === 0" class="text-center text-muted">購物車是空的</p>
+                <p v-if="cart.length === 0" class="text-center text-muted">訂單是空的</p>
 
                 <div v-for="(item, index) in cart" :key="index" class="row align-items-center mb-3 border-bottom pb-3">
                     <div class="col-2">

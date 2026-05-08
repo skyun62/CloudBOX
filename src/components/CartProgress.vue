@@ -3,7 +3,7 @@ const props = defineProps({
     currentStep: { type: Number, default: 1 }
 })
 
-const steps = ['確認購物車', '付款與運送', '填寫資料', '完成訂單']
+const steps = ['確認', '付款與運送', '填寫資料', '完成訂單']
 </script>
 
 <template>

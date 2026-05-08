@@ -19,7 +19,7 @@ const receiver = computed(() => orderInfo.value.receiver || {})
 
             <!-- 進度條 -->
             <section>
-                <span class="fw-bold fs-5" style="color: gray;">購物車</span>
+                <span class="fw-bold fs-5" style="color: gray;">合作提案</span>
                 <CartProgress :currentStep="4" />
             </section>
 

@@ -141,7 +141,7 @@ const currentTab = ref('NEWS')
                         </template>
                         <template #title>Marten Herma Anderson</template>
                         <template #content>
-                            粗獷的原始材料中加入鮮豔、溫暖的色彩，讓作品在冷靜的結構中帶有玩味與感性
+                            粗獷的
                         </template>
                         <template #action>
                             <router-link to="/craftsman/1" class="btn btn-secondary" style="background-color: #ba9393; color: white;"">
@@ -156,7 +156,7 @@ const currentTab = ref('NEWS')
                         </template>
                         <template #title>いとう みわ<br>(伊藤美和)</template>
                         <template #content>
-                            專注於讓日常器皿具備藝術裝飾性，平衡了實用功能與詩意的美學
+                            專注於
                         </template>
                         <template #action>
                             <router-link to="/craftsman/2" class="btn btn-secondary" style="background-color: #ba9393; color: white;"">
@@ -171,7 +171,7 @@ const currentTab = ref('NEWS')
                         </template>
                         <template #title>陳建志<br>(Chien Chih Chen)</template>
                         <template #content>
-                            台灣玻璃工藝者，從工業設計走向傳統玲瓏窯，將日常記憶凝結成晶瑩的工藝詩篇。
+                            台灣玻璃工藝
                         </template>
                         <template #action>
                             <router-link to="/craftsman/3" class="btn btn-secondary" style="background-color: #ba9393; color: white;"">
@@ -185,7 +185,7 @@ const currentTab = ref('NEWS')
         <!-- 表格標題 -->
         <section class="row d-flex justify-content-center justify-content-center text-center p-5">
             <span class="fs-2">每一件工藝品，也許都是某個人一生的偏執</span>
-            <p>感受那種「用心」的瞬間，那一刻，便是分享的起點。</p>
+            <p>「用心」的瞬間，也是分享的起點。</p>
             <div class="bg-secondary" style="width: 100px; height: 3px;"></div>
         </section>
 
@@ -196,7 +196,10 @@ const currentTab = ref('NEWS')
             </div>
             <div class="col-12 col-md-7 d-flex flex-column justify-content-center">
                 <h2 class="display-4 fw-bold">Marten Herma Anderson</h2>
-                <p class="mt-3">粗獷的原始材料中加入鮮豔、溫暖的色彩，讓作品在冷靜的結構中帶有玩味與感性。</p>
+                <p class="mt-3">candy🍭, or lamp💡?這是筆者我第一次見到他的作品，一見鍾情。
+                <br>他的創作靈感來自一個淘氣的童年時刻：融化的糖果黏在發熱的燈泡上。
+                <br>我著迷於這份斑斕，它將可能被大人責備的頑皮(maybe中西文化差異haha)，變成晶瑩剔透的藝術
+                <br>糖漿代表兒時記憶，燈泡代表著一種希望與想像。</p>
                 <a href="https://www.instagram.com/mrtn.ndrsn/" target="_blank" class="mt-3 d-inline-block text-muted"
                     style="font-size: 13px; letter-spacing: 0.1em;">
                     @mrtn.ndrsn ↗
@@ -207,7 +210,11 @@ const currentTab = ref('NEWS')
         <section class="row py-5 align-items-center">
             <div class="col-12 col-md-7 d-flex flex-column justify-content-center">
                 <h2 class="display-4 fw-bold">いとう みわ(伊藤美和)</h2>
-                <p class="mt-3">專注於讓日常器皿具備藝術裝飾性，平衡了實用功能與詩意的美學。</p>
+                <p class="mt-3">藝術起源於不遠的日常生活，生活，就是一種藝術呀✨
+                <br>有時候我會想，日本文化似乎很常關注一些普通人無法注意到的尋常小事，
+                <br>然後讓它變得特別，又或者，獵奇🧟?
+                <br>你想像的到的東西他都可以用玻璃創作，無論是一隻鯨魚的解剖，
+                <br>或只是你家巷口餐車在賣的一顆漢堡。</p>
                 <a href="https://www.instagram.com/miwaito.official/" target="_blank"
                     class="mt-3 d-inline-block text-muted" style="font-size: 13px; letter-spacing: 0.1em;">
                     @miwaito.official ↗
@@ -226,7 +233,11 @@ const currentTab = ref('NEWS')
             <!-- 右：文字 -->
             <div class="col-12 col-md-7 d-flex flex-column justify-content-center">
                 <h2 class="display-4 fw-bold">陳建志(Chien Chih Chen)</h2>
-                <p class="mt-3">台灣玻璃工藝者，從工業設計走向傳統玲瓏窯，將日常記憶凝結成晶瑩的工藝詩篇。</p>
+                <p class="mt-3">
+                <br>玻璃跟其他媒材最不一樣的特質就是：耗材的重製成本非常高，它們零散而幾乎難以回收，不過他運用化學元素的調配與互補，總能化腐朽為神奇，在烈焰中轉手又重塑了一個生命的誕生。
+                 <br>在他作品系列中，我最喜歡黑玉，那是將飽含鐵屑的回收玻璃重塑、賦予新生的結晶系列，或者說，我其實是更喜歡他的創作精神。
+                <br>出社會後有經歷一段迷茫，曾經有想過要去當全職學徒，就是在那樣渴求創造的形況下知道他的，碰巧，老師一開始也是由學徒開始，讓我多了分親切感。
+                </p>
                 <a href="https://www.instagram.com/ccc.117/" target="_blank" class="mt-3 d-inline-block text-muted"
                     style="font-size: 13px; letter-spacing: 0.1em;">
                     @ccc.117 ↗
