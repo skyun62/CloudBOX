@@ -59,10 +59,10 @@ const shoppingCards = [
 ]
 
 const blogCards = [
-    { id: 1, img: c_1, smallTitle: 'Card title', description: 'Some quick example text to build on the card title.' },
-    { id: 2, img: c_2, smallTitle: 'Card title', description: 'Some quick example text to build on the card title.' },
-    { id: 3, img: c_3, smallTitle: 'Card title', description: 'Some quick example text to build on the card title.' },
-    { id: 4, img: c_4, smallTitle: 'Card title', description: 'Some quick example text to build on the card title.' },
+    { id: 1, img: c_1, smallTitle: '火焰與玻璃之間', description: '當粗獷的原始材料遇上鮮豔色彩，如何在冷靜中帶有溫度？' },
+    { id: 2, img: c_2, smallTitle: '器皿美學：日常儀式感', description: '一只碗、一個杯子，讓每一次使用都成為與美的相遇' },
+    { id: 3, img: c_3, smallTitle: '玻璃吹製入門', description: '一塊砂礦如何在高溫與呼吸之間' },
+    { id: 4, img: c_4, smallTitle: '重新定義「台灣製造」', description: '在這座城市的角落裡，重新定義「台灣製造」。' },
 ]
 
 const tabs = ['NEWS', 'HOT', '推薦']
@@ -93,8 +93,6 @@ const currentTab = ref('NEWS')
                     </div>
                 </div>
 
-
-
                 <div class="carousel-item">
                     <img src="../assets/img/b_222.jpg" class="d-block w-100" alt="..." style="max-height: 80vh;">
                     <div class="text-center carousel-caption d-none d-md-block">
@@ -124,64 +122,8 @@ const currentTab = ref('NEWS')
     </header>
 
     <main class="container py-3">
-        <!-- 角色標題 -->
-        <section class="row d-flex justify-content-center justify-content-center text-center p-4">
-            <span class="fs-2">雲端裡的潘朵拉</span>
-            <p>只是一個純粹因為喜歡而凝視的人，然後把這份欣賞，分享給同樣想看見美的你。</p>
-            <div class="bg-secondary" style="width: 100px; height: 3px;"></div>
-        </section>
-        <!-- 角色 -->
-        <section>
-            <div class="container">
-                <div class="row col-12 col-lg p-5">
-                    <Role>
-                        <template #avatar>
-                            <img :src="glasser_geme" class="rounded-circle mx-auto mb-3 d-block"
-                                style="width: 150px; height: 150px; object-fit: cover;" />
-                        </template>
-                        <template #title>Marten Herma Anderson</template>
-                        <template #content>
-                            粗獷的
-                        </template>
-                        <template #action>
-                            <router-link to="/craftsman/1" class="btn btn-secondary" style="background-color: #ba9393; color: white;"">
-                                read more
-                            </router-link>
-                        </template>
-                    </Role>
-                    <Role>
-                        <template #avatar>
-                            <img :src="glasser_japan" class="rounded-circle mx-auto mb-3 d-block"
-                                style="width: 150px; height: 150px; object-fit: cover;" />
-                        </template>
-                        <template #title>いとう みわ<br>(伊藤美和)</template>
-                        <template #content>
-                            專注於
-                        </template>
-                        <template #action>
-                            <router-link to="/craftsman/2" class="btn btn-secondary" style="background-color: #ba9393; color: white;"">
-                                read more
-                            </router-link>
-                        </template>
-                    </Role>
-                    <Role>
-                        <template #avatar>
-                            <img :src="glasser_taiwan" class="rounded-circle mx-auto mb-3 d-block"
-                                style="width: 150px; height: 150px; object-fit: cover;" />
-                        </template>
-                        <template #title>陳建志<br>(Chien Chih Chen)</template>
-                        <template #content>
-                            台灣玻璃工藝
-                        </template>
-                        <template #action>
-                            <router-link to="/craftsman/3" class="btn btn-secondary" style="background-color: #ba9393; color: white;"">
-                                read more
-                            </router-link>
-                        </template>
-                    </Role>
-                </div>
-            </div>
-        </section>
+
+
         <!-- 表格標題 -->
         <section class="row d-flex justify-content-center justify-content-center text-center p-5">
             <span class="fs-2">每一件工藝品，也許都是某個人一生的偏執</span>
@@ -197,9 +139,9 @@ const currentTab = ref('NEWS')
             <div class="col-12 col-md-7 d-flex flex-column justify-content-center">
                 <h2 class="display-4 fw-bold">Marten Herma Anderson</h2>
                 <p class="mt-3">candy🍭, or lamp💡?這是筆者我第一次見到他的作品，一見鍾情。
-                <br>他的創作靈感來自一個淘氣的童年時刻：融化的糖果黏在發熱的燈泡上。
-                <br>我著迷於這份斑斕，它將可能被大人責備的頑皮(maybe中西文化差異haha)，變成晶瑩剔透的藝術
-                <br>糖漿代表兒時記憶，燈泡代表著一種希望與想像。</p>
+                    <br>他的創作靈感來自一個淘氣的童年時刻：融化的糖果黏在發熱的燈泡上。
+                    <br>我著迷於這份斑斕，它將可能被大人責備的頑皮(maybe中西文化差異haha)，變成晶瑩剔透的藝術。糖漿代表兒時記憶，燈泡代表著一種希望與想像。
+                </p>
                 <a href="https://www.instagram.com/mrtn.ndrsn/" target="_blank" class="mt-3 d-inline-block text-muted"
                     style="font-size: 13px; letter-spacing: 0.1em;">
                     @mrtn.ndrsn ↗
@@ -211,10 +153,11 @@ const currentTab = ref('NEWS')
             <div class="col-12 col-md-7 d-flex flex-column justify-content-center">
                 <h2 class="display-4 fw-bold">いとう みわ(伊藤美和)</h2>
                 <p class="mt-3">藝術起源於不遠的日常生活，生活，就是一種藝術呀✨
-                <br>有時候我會想，日本文化似乎很常關注一些普通人無法注意到的尋常小事，
-                <br>然後讓它變得特別，又或者，獵奇🧟?
-                <br>你想像的到的東西他都可以用玻璃創作，無論是一隻鯨魚的解剖，
-                <br>或只是你家巷口餐車在賣的一顆漢堡。</p>
+                    <br>有時候我會想，日本文化似乎很常關注一些普通人無法注意到的尋常小事，
+                    <br>然後讓它變得特別，又或者，獵奇🧟?
+                    <br>你想像的到的東西他都可以用玻璃創作，無論是一隻鯨魚的解剖，
+                    <br>或只是你家巷口餐車在賣的一顆漢堡。
+                </p>
                 <a href="https://www.instagram.com/miwaito.official/" target="_blank"
                     class="mt-3 d-inline-block text-muted" style="font-size: 13px; letter-spacing: 0.1em;">
                     @miwaito.official ↗
@@ -234,9 +177,9 @@ const currentTab = ref('NEWS')
             <div class="col-12 col-md-7 d-flex flex-column justify-content-center">
                 <h2 class="display-4 fw-bold">陳建志(Chien Chih Chen)</h2>
                 <p class="mt-3">
-                <br>玻璃跟其他媒材最不一樣的特質就是：耗材的重製成本非常高，它們零散而幾乎難以回收，不過他運用化學元素的調配與互補，總能化腐朽為神奇，在烈焰中轉手又重塑了一個生命的誕生。
-                 <br>在他作品系列中，我最喜歡黑玉，那是將飽含鐵屑的回收玻璃重塑、賦予新生的結晶系列，或者說，我其實是更喜歡他的創作精神。
-                <br>出社會後有經歷一段迷茫，曾經有想過要去當全職學徒，就是在那樣渴求創造的形況下知道他的，碰巧，老師一開始也是由學徒開始，讓我多了分親切感。
+                    <br>玻璃跟其他媒材最不一樣的特質就是：耗材的重製成本非常高，它們零散而幾乎難以回收，不過他運用化學元素的調配與互補，總能化腐朽為神奇，在烈焰中轉手又重塑了一個生命的誕生。
+                    <br>在他作品系列中，我最喜歡黑玉，那是將飽含鐵屑的回收玻璃重塑、賦予新生的結晶系列，或者說，我其實是更喜歡他的創作精神。
+                    <br>出社會後有經歷一段迷茫，曾經有想過要去當全職學徒，就是在那樣渴求創造的形況下認識老師的，碰巧，老師一開始也是由學徒開始，讓我多了分親切感。
                 </p>
                 <a href="https://www.instagram.com/ccc.117/" target="_blank" class="mt-3 d-inline-block text-muted"
                     style="font-size: 13px; letter-spacing: 0.1em;">
@@ -244,17 +187,78 @@ const currentTab = ref('NEWS')
                 </a>
             </div>
         </section>
-        <!-- 圖中有圖的標題 -->
+        <!-- 角色標題 -->
+        <section class="row d-flex justify-content-center justify-content-center text-center p-4">
+            <span class="fs-2">雲端裡的潘朵拉</span>
+            <p>只是一個純粹因為喜歡而凝視的人，然後把這份欣賞，分享給同樣想看見美的你。</p>
+            <div class="bg-secondary" style="width: 100px; height: 3px;"></div>
+        </section>
+        <!-- 角色 -->
         <section>
-            <div class="row p-5">
-                <div class="col-12 col-md-4">
-                    <span class="fs-4">作品是生命的縮影</span>
-                    <div class="bg-secondary m-2" style="width: 100px; height: 3px;"></div>
+            <div class="container">
+                <div class="row col-12 col-lg p-5">
+                    <Role>
+                        <template #avatar>
+                            <img :src="glasser_geme" class="rounded-circle mx-auto mb-3 d-block"
+                                style="width: 150px; height: 150px; object-fit: cover;" />
+                        </template>
+                        <template #title>Marten Herma Anderson</template>
+                        <template #content>
+                            德國陶藝、建築、玻璃創作
+                        </template>
+                        <template #action>
+                            <router-link to="/craftsman/1" class="btn btn-secondary"
+                                style="background-color: #ba9393; color: white;">
+                                read more
+                            </router-link>
+                        </template>
+</Role>
+<Role>
+    <template #avatar>
+                            <img :src="glasser_japan" class="rounded-circle mx-auto mb-3 d-block"
+                                style="width: 150px; height: 150px; object-fit: cover;" />
+                        </template>
+                        <template #title>いとう みわ<br>(伊藤美和)</template>
+                        <template #content>
+                            日本大阪人，玻璃創作
+                        </template>
+                        <template #action>
+                            <router-link to="/craftsman/2" class="btn btn-secondary"
+                                style="background-color: #ba9393; color: white;">
+                                read more
+                            </router-link>
+                        </template>
+</Role>
+<Role>
+    <template #avatar>
+                            <img :src="glasser_taiwan" class="rounded-circle mx-auto mb-3 d-block"
+                                style="width: 150px; height: 150px; object-fit: cover;" />
+                        </template>
+                        <template #title>陳建志<br>(Chien Chih Chen)</template>
+                        <template #content>
+                            台灣玻璃工藝
+                        </template>
+                        <template #action>
+                            <router-link to="/craftsman/3" class="btn btn-secondary"
+                                style="background-color: #ba9393; color: white;">
+                                read more
+                            </router-link>
+                        </template>
+</Role>
+</div>
+</div>
+</section>
+<!-- 圖中有圖的標題 -->
+<section>
+    <div class=" row p-5">
+                                <div class="col-12 col-md-4">
+                                    <span class="fs-4">作品是生命的縮影</span>
+                                    <div class="bg-secondary m-2" style="width: 100px; height: 3px;"></div>
+                                </div>
+                                <div class="col-12 col-md-8 d-flex align-items-center">
+                                    <span>曾經有個朋友跟我說過一段我很喜歡的話，他說：「買一個人的產品就像是買了他的故事、奮鬥，是因為有這些經歷他才可以做出這個東西、然後賣給你。」</span>
+                                </div>
                 </div>
-                <div class="col-12 col-md-8 d-flex align-items-center">
-                    <span>曾經有個朋友跟我說過一段我很喜歡的話，他說：「買一個人的產品就像是買了他的故事、奮鬥，是因為有這些經歷他才可以做出這個東西、然後賣給你。」</span>
-                </div>
-            </div>
         </section>
 
         <!-- 圖中有圖 -->
@@ -386,8 +390,8 @@ const currentTab = ref('NEWS')
         </div>
         <!-- 部落格卡片 -->
         <section class="row">
-            <BlogCard v-for="(card, index) in blogCards" :id="card.id" :key="index" :img="card.img" :smallTitle="card.smallTitle"
-                :description="card.description" />
+            <BlogCard v-for="(card, index) in blogCards" :id="card.id" :key="index" :img="card.img"
+                :smallTitle="card.smallTitle" :description="card.description" />
 
         </section>
 
